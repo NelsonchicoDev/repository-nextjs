@@ -16,6 +16,7 @@ export default {
   		colors: {
 			bodyColor:'#1c1c22',
 			lightColor:'#00ff99',
+			lightSky:'#00e187',
 			hoverColor: '#00e187',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

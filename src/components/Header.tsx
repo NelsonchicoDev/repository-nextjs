@@ -20,13 +20,27 @@ const Header = () => {
             <Link
               key={item?.title}
               href={item?.href}
-              className={` hover:text-hoverColor hoverEffect relative group ${
-                pathname === item?.href
-              }`}
+              className={` hover:text-hoverColor hoverEffect relative group overflow-x-hidden 
+                ${pathname === item?.href && ` text-hoverColor`}`}
             >
               {item?.title}
+              <span
+                className={`w-full h-px bg-hoverColor inline-block absolute left-0 bottom-0 group-hover:translate-x-0 hoverEffect 
+                                ${
+                                  pathname === item?.href
+                                    ? "translate-x-0"
+                                    : "-translate-x-[105%]"
+                                }`}
+              />
             </Link>
           ))}
+          <Link
+            href={"/resume.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Hire me
+          </Link>
         </div>
       </Container>
     </header>
