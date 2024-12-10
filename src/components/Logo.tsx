@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 interface Props {
-  className: string;
+  className?: string;
   title: string;
   subtitle: string;
 }
