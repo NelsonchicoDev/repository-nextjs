@@ -44,7 +44,7 @@ const socialData = [
 const SocialLinks = () => {
   return (
     <TooltipProvider>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 mb-5">
         {socialData?.map((item) => (
           <Tooltip key={item?.title}>
             <TooltipTrigger asChild>
